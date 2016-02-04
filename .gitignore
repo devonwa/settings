@@ -60,3 +60,6 @@ target/
 
 # Google Drive
 desktop.ini
+
+# Emacs
+*#*
