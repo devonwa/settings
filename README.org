@@ -1,0 +1,2 @@
+* Settings
+Settings for text editors and any other applications I'd want accross multiple PCs.
