@@ -1,4 +1,6 @@
-# Ignore everything in this directory
+# Ignore directory
 *
-# Except this file
+
+# Exceptions
 !.gitignore
+!README.org
