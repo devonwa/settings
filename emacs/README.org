@@ -1,0 +1,27 @@
+#+TITLE: Emacs settings
+
+* Installation
+
+Include the following in .emacs.d/init.el:
+#+BEGIN_SRC emacs-lisp
+(load "~/.emacs.d/my_init.el")
+#+END_SRC
+
+Create a file called "~/.emacs.d/my_init.el" and add the following: 
+#+BEGIN_SRC emacs-lisp
+;; -*- mode: Lisp -*-
+
+;; Set variables
+(setq my_path-cloud "~/Google Drive/")
+(setq my_path-projects (concat my_path-cloud "projects/"))
+(setq my_path-bib (concat my_path-projects "bibliography/"))
+
+;; Load settings
+(load (concat my_path-projects "settings/emacs/devon.el"))
+(load (concat my_path-projects "jkitchin/jmax/init.el"))
+#+END_SRC
+
+Include the following line in jmax user.el:
+#+BEGIN_SRC emacs-lisp
+(load "~/directory_to/settings/emacs/devon_jmax")
+#+END_SRC
